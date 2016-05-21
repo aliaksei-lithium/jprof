@@ -1,0 +1,25 @@
+{
+    "name": "jprof-site",
+    "version": "0.1.0",
+    "description": "jprof.by frontend",
+    "dependencies": {
+    },
+    "devDependencies": {
+        "extract-text-webpack-plugin": "^1.0.1",
+        "html-webpack-plugin": "^2.17.0",
+        "image-webpack-loader": "^1.8.0",
+        "less": "^2.7.1",
+        "less-loader": "^2.2.3",
+        "normalize.css": "^4.1.1",
+        "css-loader": "^0.23.1",
+        "style-loader": "^0.13.1"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "jprof"
+    ],
+    "author": "jprof.by",
+    "license": "MIT"
+}

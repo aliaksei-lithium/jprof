@@ -1,0 +1,24 @@
+.project
+.settings
+.classpath
+.idea
+.gradle
+target
+build
+deploy
+deploy-*
+*.iml
+
+nb-configuration.xml
+reports
+*.*~
+.metadata
+build *.txt
+.vagrant
+*-local-config.cmd
+bin
+
+node_modules
+
+*.log
+*.pdf

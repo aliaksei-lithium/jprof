@@ -1,0 +1,21 @@
+@basePadding: 20px;
+@grayTextColor: #4c5760;
+
+// Commons
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (min-width: 768px) {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+}
+
+.jp-Container {
+  padding: 0 20px;
+}

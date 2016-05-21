@@ -1,0 +1,59 @@
+@import (reference) "hdrContent";
+
+.hdrMenu {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.3em;
+
+  // The same dimensions as hdrContent
+  &__links {
+    flex: 1 0 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 0.5em;
+
+    > a {
+      color: @hdrBlue;
+      text-decoration: none;
+      text-transform: uppercase;
+      &:focus, &:hover {
+        color: darken(@hdrBlue, 10%);
+      }
+    }
+  }
+
+  @socialIconSize: 20px;
+  &__social {
+    flex: 1 0 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 0.5em;
+
+    background-color: @hdrBlue;
+
+    &_twitter {
+      background: url("../assets/images/twitter_icon.svg") no-repeat center center;
+      background-size: contain;
+      width: @socialIconSize;
+      height: @socialIconSize;
+    }
+
+    &_facebook {
+      background: url("../assets/images/facebook-logo.svg") no-repeat center center;
+      background-size: contain;
+      width: @socialIconSize;
+      height: @socialIconSize;
+    }
+
+    &_youtube {
+      background: url("../assets/images/youtube-logo.svg") no-repeat center center;
+      background-size: contain;
+      width: @socialIconSize;
+      height: @socialIconSize;
+    }
+  }
+}

@@ -1,0 +1,61 @@
+@import (reference) "../assets/commons";
+
+@hdrBlue: #1976d2;
+
+.hdrContent {
+  &__left {
+
+    flex: 1 0 70%;
+    display: flex;
+    align-items: center;
+  }
+
+  &__right {
+    padding-top: 4em;
+    padding-bottom: 2em;
+
+    flex: 1 0 30%;
+    background-color: @hdrBlue;
+  }
+
+  &__logo {
+    width: 150px;
+    height: 150px;
+    margin-left: @basePadding;
+    background: url("../assets/images/jprof_logo.png") no-repeat center center;
+    background-size: contain;
+  }
+
+  &__leadText {
+    margin-left: @basePadding;
+    font-size: 3rem;
+    line-height: 40px;
+    font-weight: 600;
+    color: @grayTextColor;
+  }
+}
+
+.hdrNextEvent {
+  padding-left: 1em;
+
+  &__place {
+    font-size: 2rem;
+    text-align: left;
+    text-transform: uppercase;
+  }
+
+  &__btn {
+    font-size: 1.3em;
+    padding: 0.5em;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+
+    &:focus, &:hover {
+      color: #ececec;
+      border: 1px solid #ececec;
+      text-decoration: none;
+    }
+  }
+}
