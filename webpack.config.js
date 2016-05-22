@@ -24,15 +24,19 @@ var webpackConfig = {
                     'file?hash=sha512&digest=hex&name=[hash].[ext]',
                     'image-webpack?bypassOnDebug&optimizationLevel=7&interlaced=false'
                 ]
+            },
+            {
+                test: /\.html$/,
+                loader: 'html-loader'
             }
         ]
     },
     plugins: [
         new ExtractTextPlugin("[name].css"),
-        new HtmlWebpackPlugin({  // Also generate a test.html
+        new HtmlWebpackPlugin({
             filename: 'index.html',
             template: 'src/index.html',
-            title: "Java Professionals BY"
+            title: "Java Professionals Community"
         })]
 };
 

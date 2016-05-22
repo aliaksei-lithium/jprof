@@ -6,7 +6,8 @@
 
     <title>Java Professionals Community</title>
 
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300&subset=latin,cyrillic' rel='stylesheet'
+          type='text/css'>
 </head>
 
 <body class="l-body">
@@ -23,8 +24,8 @@
         <div class="hdrContent__right">
             <div class="hdrNextEvent">
                 <p class="hdrNextEvent__place">
-                    Май 26, 2016 <br>
-                    Минск
+                    26 Мая <br>
+                    Минск, Imaguru
                 </p>
 
                 <a href="https://www.facebook.com/groups/java.prof.community/"
@@ -36,36 +37,85 @@
     </div>
     <nav class="hdrMenu">
         <section class="hdrMenu__links">
-            <a href="#news">Новости</a>
             <a href="#about">О Нас</a>
-            <a href="/speakers">Спикеры</a>
-            <a href="#schedule">Мероприятия</a>
+            <a href="#schedule">События</a>
+            <a href="/speakers">Докладчики</a>
         </section>
         <section class="hdrMenu__social">
             <a href="https://www.facebook.com/groups/java.prof.community/"
                target="_blank"
                class="hdrMenu__social_facebook"></a>
+            <a href="https://gitter.im/JavaBy/chat"
+               target="_blank"
+               class="hdrMenu__social_gitter"></a>
             <a href="https://www.youtube.com/channel/UCDjCCgjlyR7uzhH7ZyTGn4Q"
                target="_blank"
                class="hdrMenu__social_youtube"></a>
-            <a href="https://twitter.com/JavacBy"
-               target="_blank"
-               class="hdrMenu__social_twitter"></a>
         </section>
     </nav>
 </header>
 
 <main class="l-main">
-    <article id="about">
-        Минское сообщество Java профессионалов, целями которого являются регулярные встречи и обмен опытом,
-        идеями и рекомендациями о том, как использовать Java-технологии в нашей ежедневной работе.
+    <article id="schedule" class="mainBlock">
+        <h2 class="mainBlock__title">Встречаемся 26 мая, 19:00. Imaguru</h2>
+        <section class="jpEvent mainBlock__content">
+            <div class="jpEvent__place"></div>
+            <div class="jpEvent__talks">
+                <div class="jpEvent__talk">
+                    <div class="jpEvent__talkPhoto">
+                        <img src="assets/images/sn.png">
+                    </div>
+                    <div class="jpEvent__talkInfo">
+                        <div class="jpEvent__talkSpeaker_name">
+                            Сергей Нехвядович
+                        </div>
+                        <div class="jpEvent__talkSpeaker_title">
+                            Lead Software Engineer, EPAM
+                        </div>
+                        <div class="jpEvent__talkNotes">
+                            <strong>Real modular Java applications with OSGI</strong>.
+                            Мир модульных приложений под OSGI соусом, или там где микросервисы не справляются.
+                            Интригующий рассказ про опыт разработки приложения с более 450 модулями используя OSGI.
+                        </div>
+                    </div>
+                </div>
+                <div class="jpEvent__talk">
+
+                    <div class="jpEvent__talkPhoto">
+                        <img src="assets/images/vt.jpg">
+                    </div>
+                    <div class="jpEvent__talkInfo">
+                        <div class="jpEvent__talkSpeaker_name">
+                            Василина Терехова
+                        </div>
+                        <div class="jpEvent__talkSpeaker_title">
+                            Senior Software Engineer, EPAM
+                        </div>
+                        <div class="jpEvent__talkNotes">
+                            <strong>WebRTC + Websockets + Java + С = &#x2665;</strong>.
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </article>
+    <article id="about" class="mainBlock">
+        <p>
+            Минское сообщество Java профессионалов, где не стесняются громко разговаривать про то, что любят.
+            Приходите на наши мероприятия, общайтесь, знакомтесь с людьми которые любят своё дело.
+            А ещё лучше – расскажите про свой опыт в мире Java.
+        </p>
+        <p>
+            <a href="mailto:java.professionalsby@gmail.com" class="about__mail">
+                <img src="assets/images/email.svg" class="about__mailIcon">
+            </a>
+        </p>
     </article>
     <article id="news">
 
     </article>
-    <article id="schedule">
 
-    </article>
 </main>
 
 <footer>
@@ -73,6 +123,5 @@
 </footer>
 
 <script src="index_bundle.js"></script>
-<!--<script src="http://localhost:8080/webpack-dev-server.js"></script>-->
 </body>
 </html>

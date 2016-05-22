@@ -3,6 +3,7 @@
 @import "assets/commons.less";
 @import "components/hdrContent.less";
 @import "components/hdrMenu.less";
+@import "components/jpEvent.less";
 
 body {
   font-family: "Roboto", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -44,11 +45,46 @@ footer {
   background-color: #f4f7f8;
 }
 
-#about {
-  font-size: 2em;
-  max-width: 980px;
-  text-align: center;
+.mainBlock {
   margin: 0 auto;
   padding: 2em 20px;
-  color: @grayTextColor;
+  //max-width: 980px;
+
+  &__title {
+    //font-weight: 300;
+    color: @grayTextColor;
+  }
+
+  &__content {
+    margin-top: 0.5rem;
+  }
+}
+
+#schedule {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+}
+
+#about {
+  flex: 1 0 100%;
+  font-size: 2em;
+  font-weight: 300;
+  text-align: center;
+  background-color: #e6e6e6;
+  p > {
+    margin-top: 1rem;
+    margin-bottom: 0;
+  }
+}
+
+.about__mail {
+  text-decoration: none;
+}
+
+.about__mailIcon {
+  width: 50px;
+  height: 50px;
 }
