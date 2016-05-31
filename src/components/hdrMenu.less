@@ -1,18 +1,32 @@
 @import (reference) "hdrContent";
 
 .hdrMenu {
+
+  @media (min-width: @screen-sm-min) {
+    flex-wrap: wrap;
+  }
+
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   font-size: 1.3em;
+
 
   // The same dimensions as hdrContent
   &__links {
-    flex: 1 0 70%;
+
+    flex: 1 0 100%;
+    order: 2;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     padding-bottom: 0.5em;
+
+    @media (min-width: @screen-sm-min) {
+      flex: 1 0 70%;
+      order: 1;
+    }
 
     > a {
       color: @hdrBlue;
@@ -26,14 +40,20 @@
 
   @socialIconSize: 20px;
   &__social {
-    flex: 1 0 30%;
+    flex: 1 0 100%;
     display: flex;
+    order: 1;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     padding-bottom: 0.5em;
-
     background-color: @hdrBlue;
+
+    @media (min-width: @screen-sm-min) {
+      flex: 1 0 30%;
+      order: 1;
+      background-color: @hdrBlue;
+    }
 
     &_gitter {
       background: url("../assets/images/gitter-icon.svg") no-repeat center center;
