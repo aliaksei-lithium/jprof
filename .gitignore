@@ -19,6 +19,6 @@ build *.txt
 bin
 
 node_modules
-
+/dis
 *.log
 *.pdf
